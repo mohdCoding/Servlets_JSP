@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>ServletConfig</display-name>
+  
+  
+  <context-param>
+     <param-name>Best Mentor</param-name>
+     <param-value>Nithin Manjunath</param-value>
+  </context-param>
+  
+  <servlet>
+    <servlet-name>DemoServlet</servlet-name>
+    <servlet-class>com.haroon.controller.DemoServlet</servlet-class>
+    <init-param>
+       <param-name>jdbc</param-name>
+       <param-value>jdbc:mysql://localhost:9999/enterprise_java_batch</param-value>
+    </init-param>
+    
+     <init-param>
+       <param-name>userName</param-name>
+       <param-value>root</param-value>
+    </init-param>
+    
+     <init-param>
+       <param-name>password</param-name>
+       <param-value>root123</param-value>
+    </init-param>
+  </servlet>
+  
+  <servlet-mapping>
+     <servlet-name>DemoServlet</servlet-name>
+     <url-pattern>/demo</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>DummyServlet</servlet-name>
+    <servlet-class>com.haroon.controller.DummyServlet</servlet-class>
+    
+     <init-param>
+       <param-name>Country</param-name>
+       <param-value>India</param-value>
+    </init-param>
+    
+     <init-param>
+       <param-name>Company</param-name>
+       <param-value>Microsoft</param-value>
+    </init-param>
+    
+     <init-param>
+       <param-name>Developer</param-name>
+       <param-value>Mohammed Haroon</param-value>
+    </init-param>
+  </servlet>
+  
+  <servlet-mapping>
+     <servlet-name>DummyServlet</servlet-name>
+     <url-pattern>/test</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>ServletContext2</display-name>
+
+  <context-param>
+     <param-name>Goat</param-name>
+     <param-value>Cristiano Ronaldo</param-value>
+  </context-param>
+  
+  <context-param>
+    <param-name>Number</param-name>
+    <param-value>7</param-value>
+  </context-param>
+  
+  <context-param>
+     <param-name>Club</param-name>
+     <param-value>Real Madrid</param-value>
+  </context-param>
+  
+</web-app>

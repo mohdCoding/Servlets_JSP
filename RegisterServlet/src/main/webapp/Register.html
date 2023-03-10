@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register Form</title>
+<style>
+body {
+  font-size: 22px;
+  margin:5px;
+  padding:5px;
+}
+</style>
+</head>
+<body bgcolor='blue' text='white'>
+<center>
+<h1>Student Register Form</h1>
+</center>
+
+<form action="./register" method='get'>
+<table align='center'>
+ <tr>
+ <th>Enter your name</th>
+ <td><input type='text' name='name'></td>
+ </tr>
+ 
+ <tr>
+ <th>Enter your contact number</th>
+ <td><input type='text' name='contact'></td>
+ </tr>
+ 
+ <tr>
+ <th>Enter your email</th>
+ <td><input type='email' name='email'></td>
+ </tr>
+ 
+ <tr>
+ <th>Select your course</th>
+ <td><select name='courses' multiple='multiple'>
+  <option name='core java'>Core Java</option>
+  <option  name='advanced javav'>Advanced Java</option>
+  <option name='hibernate'>Hibernate</option>
+  <option name='spring boot'>Spring boot</option>
+  <option name='microservices'>Microservices</option>
+</select></td>
+ </tr>
+ <tr>
+ <th></th>
+ <td><input type='submit' value='register'></td>
+ </tr>
+ </table>
+
+
+</form>
+</body>
+</html>
